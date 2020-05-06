@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <Scatter2D title="Demo" :width="800" :height="600" />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import Scatter2D from './components/Scatter2D.vue';
 
 @Component({
   components: {
-    HelloWorld,
+    Scatter2D,
   },
 })
 export default class App extends Vue {}
